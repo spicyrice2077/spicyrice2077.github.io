@@ -10,6 +10,7 @@ body {
     align-items: center;
     min-height: 100vh; /* Ensure the body height covers the viewport */
     box-sizing: border-box;
+    position: relative; /* Allow absolute positioning of children */
 }
 
 .container {
@@ -20,29 +21,17 @@ body {
     max-width: 1200px; /* Adjust max-width */
     width: 90%; /* Adjust width to be more responsive */
     box-sizing: border-box;
-    position: relative; /* Allow absolute positioning of children */
 }
 
 /* Header */
 header {
     text-align: center;
-    position: relative; /* Allow absolute positioning of LinkedIn link */
+    position: relative;
 }
 
 header h1 {
     margin: 0;
     font-size: 2em; /* Increase font size */
-}
-
-.linkedin-link {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-.linkedin-logo {
-    height: 40px; /* Set the height you want */
-    width: auto; /* Maintain aspect ratio */
 }
 
 /* Main Content */
@@ -93,7 +82,13 @@ section p {
 }
 
 .linkedin-logo {
-    height: 30px; /* Set the height you want */
+    height: 65px; /* Set the height you want */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
+.email-logo {
+    height: 65px; /* Set the height you want */
     width: auto; /* Maintain aspect ratio */
     border-radius: 5px;
 }
@@ -121,6 +116,14 @@ section p {
     width: 33%; /* Set the width to 1/3 of the container */
     border: 1px solid #58a6ff; /* Match the color of the container border */
     margin: 20px auto; /* Center the divider and add vertical spacing */
+}
+
+/* Contact Section */
+.contact-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between logos */
 }
 
 /* Footer */
@@ -161,5 +164,8 @@ footer {
     }
     .section-divider {
         width: 50%; /* Adjust the divider width for smaller screens */
+    }
+    .contact-logos {
+        flex-direction: column; /* Stack logos vertically on smaller screens */
     }
 }
