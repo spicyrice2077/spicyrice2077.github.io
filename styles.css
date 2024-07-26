@@ -15,7 +15,7 @@ body {
 
 .container {
     background-color: #161b22;
-    border: 4px solid #58a6ff; /* Increase border width */
+    border: 4px solid #58a6ff; /* Back to GitHub theme */
     border-radius: 10px;
     padding: 20px;
     max-width: 1200px; /* Adjust max-width */
@@ -45,7 +45,7 @@ section {
 }
 
 section h2 {
-    color: #58a6ff;
+    color: #58a6ff; /* Back to GitHub theme */
     text-align: center; /* Center headings */
     font-size: 2em; /* Increase font size for section headers */
 }
@@ -59,6 +59,15 @@ section p {
     text-align: left; /* Align text to the left */
     margin: 0 auto;
     max-width: 800px; /* Ensure the text block is not too wide */
+}
+
+/* Profile Picture */
+.profile {
+    border-radius: 50%; /* Make the image circular */
+    height: 650px; /* Adjust the height */
+    width: 650px; /* Adjust the width */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    border: 4px solid #58a6ff; /* Back to GitHub theme */
 }
 
 /* Certifications */
@@ -131,7 +140,7 @@ section p {
     align-items: center;
     background-color: #0d1117;
     color: #c9d1d9;
-    border: 2px solid #58a6ff;
+    border: 2px solid #58a6ff; /* Back to GitHub theme */
     border-radius: 5px; /* Button border radius */
     padding: 10px 20px;
     text-decoration: none;
@@ -140,7 +149,7 @@ section p {
 }
 
 .button:hover {
-    background-color: #58a6ff;
+    background-color: #58a6ff; /* Back to GitHub theme */
     color: #0d1117;
 }
 
@@ -154,7 +163,7 @@ footer {
 /* Section Divider */
 .section-divider {
     width: 33%; /* Set the width to 1/3 of the container */
-    border: 1px solid #58a6ff; /* Match the color of the container border */
+    border: 1px solid #58a6ff; /* Back to GitHub theme */
     margin: 20px auto; /* Center the divider and add vertical spacing */
 }
 
@@ -196,9 +205,15 @@ footer {
     .education {
         flex-wrap: nowrap; /* Allow horizontal scrolling */
         overflow-x: auto; /* Allow horizontal scrolling */
+        gap: 20px; /* Increase space between education items for mobile */
     }
     .education-item {
         width: 80%; /* Make items take more space on smaller screens */
         min-width: 200px; /* Ensure a minimum width for each item */
     }
+}
+
+/* Focus on the Master's degree section */
+.education-item:first-child {
+    scroll-snap-align: start; /* Ensure the first item (Master's degree) is initially focused */
 }
