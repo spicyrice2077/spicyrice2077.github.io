@@ -100,3 +100,26 @@ footer {
     padding: 10px;
     font-size: 1.2em; /* Increase font size */
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .profile {
+        height: 300px; /* Reduce size for smaller screens */
+        width: 300px; /* Reduce size for smaller screens */
+    }
+    section h2 {
+        font-size: 1.3em; /* Adjust font size for smaller screens */
+    }
+    section p {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+    header h1 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+    footer {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+}
