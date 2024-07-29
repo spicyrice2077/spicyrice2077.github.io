@@ -46,14 +46,25 @@ header h1 {
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the buttons and profile image vertically */
     gap: 20px; /* Add gap between buttons and profile image */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .horizontal-buttons ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px; /* Space between buttons */
     list-style-type: none;
     padding: 0;
     margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.horizontal-buttons ul li {
+    flex: 1 1 auto;
+    max-width: 200px;
 }
 
 .horizontal-buttons ul li a.button {
@@ -66,6 +77,10 @@ header h1 {
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .horizontal-buttons ul li a.button:hover {
