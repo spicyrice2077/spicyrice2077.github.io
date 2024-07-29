@@ -11,6 +11,7 @@ body {
     min-height: 100vh; /* Ensure the body height covers the viewport */
     box-sizing: border-box;
     position: relative; /* Allow absolute positioning of children */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .container {
@@ -19,11 +20,12 @@ body {
     border-radius: 10px;
     padding: 20px;
     max-width: 1200px; /* Adjust max-width */
-    width: 90%; /* Adjust width to be more responsive */
+    width: 100%; /* Ensure it spans the full width */
     box-sizing: border-box;
     display: flex;
     flex-direction: column; /* Ensure header and content are stacked */
     align-items: center; /* Center the content horizontally */
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 header {
@@ -73,11 +75,15 @@ header h1 {
 
 main {
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box; /* Ensure it respects the width and padding */
 }
 
 section {
     margin-bottom: 20px;
     text-align: center; /* Center section content */
+    max-width: 100%;
+    box-sizing: border-box; /* Ensure it respects the width and padding */
 }
 
 section h2 {
@@ -88,12 +94,14 @@ section h2 {
 
 section p {
     font-size: 1.2em; /* Increase font size */
+    word-wrap: break-word; /* Ensure long words are broken to fit */
 }
 
 .about-text {
     text-align: left; /* Align text to the left */
     margin: 0 auto;
-    max-width: 800px; /* Ensure the text block is not too wide */
+    max-width: 100%; /* Ensure it respects the container width */
+    box-sizing: border-box; /* Ensure it respects the width and padding */
 }
 
 .profile {
@@ -205,6 +213,10 @@ footer {
         flex-direction: column; /* Stack buttons and profile image vertically */
         align-items: center;
     }
+    .horizontal-buttons ul {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Reduce gap between buttons */
+    }
     .profile {
         height: 250px; /* Reduce size for smaller screens */
         width: 250px; /* Reduce size for smaller screens */
@@ -222,12 +234,11 @@ footer {
         font-size: 1em; /* Adjust font size for smaller screens */
     }
     .certifications {
-        flex-wrap: nowrap; /* Prevent wrapping */
-        overflow-x: auto; /* Allow horizontal scrolling */
-        justify-content: flex-start; /* Align items to the start */
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center; /* Center items */
     }
     .certifications a {
-        margin: 5px; /* Reduce margin for smaller screens */
+        margin: 10px; /* Adjust margin for smaller screens */
     }
     .section-divider {
         width: 50%; /* Adjust the divider width for smaller screens */
@@ -236,8 +247,7 @@ footer {
         flex-direction: column; /* Stack logos vertically on smaller screens */
     }
     .education {
-        flex-wrap: nowrap; /* Allow horizontal scrolling */
-        overflow-x: auto; /* Allow horizontal scrolling */
+        flex-wrap: wrap; /* Allow wrapping */
         gap: 20px; /* Increase space between education items for mobile */
     }
     .education-item {
