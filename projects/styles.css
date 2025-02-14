@@ -118,7 +118,7 @@ section p {
 }
 
 .cert-logo {
-    height: 250px; /* Set the height you want */
+    height: 150px; /* Set the height you want */
     width: auto; /* Maintain aspect ratio */
     border-radius: 5px;
 }
