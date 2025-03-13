@@ -147,8 +147,8 @@ section p {
     border-radius: 5px;
 }
 
-.linkedin-logo, .email-logo {
-    height: 24px;
+.linkedin-logo, .email-logo, .github-logo {
+    height: 30px;
     width: auto; /* Maintain aspect ratio */
     border-radius: 0; /* Remove border radius */
     margin-right: 8px; /* Space between logo and text */
@@ -173,7 +173,7 @@ section p {
 }
 
 .education-logo {
-    height: 125px; /* Adjust the height */
+    height: 100px; /* Adjust the height */
     width: auto; /* Maintain aspect ratio */
     border-radius: 5px;
 }
