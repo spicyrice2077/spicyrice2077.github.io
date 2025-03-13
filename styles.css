@@ -141,16 +141,16 @@ section p {
 }
 
 .cert-logo {
-    height: 250px; /* Set the height you want */
+    height: 120px;
     width: auto; /* Maintain aspect ratio */
+    align-items: flex-start; /* Align items to the start */
     border-radius: 5px;
 }
 
 .linkedin-logo, .email-logo {
-    height: 24px; /* Adjust height for buttons */
+    height: 24px;
     width: auto; /* Maintain aspect ratio */
     border-radius: 0; /* Remove border radius */
-    vertical-align: middle; /* Align logos with text */
     margin-right: 8px; /* Space between logo and text */
 }
 
@@ -158,7 +158,7 @@ section p {
     display: flex;
     justify-content: center; /* Center the items */
     align-items: flex-start; /* Align items to the start */
-    gap: 10px; /* Space between education items */
+    gap: 5px; /* Space between education items */
     overflow-x: auto; /* Allow horizontal scrolling */
 }
 
