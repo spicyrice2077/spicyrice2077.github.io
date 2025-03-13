@@ -147,7 +147,7 @@ section p {
     border-radius: 5px;
 }
 
-.linkedin-logo, .email-logo, .github-logo {
+.linkedin-logo, .email-logo {
     height: 30px;
     width: auto; /* Maintain aspect ratio */
     border-radius: 0; /* Remove border radius */
