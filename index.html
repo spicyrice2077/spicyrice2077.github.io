@@ -4,90 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bradley Currie</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Bradley Currie</h1>
+        <header class="site-header">
+            <div class="site-identity">
+                <h1>Bradley Currie</h1>
+                <p class="tagline">IT professional and lifelong learner</p>
+            </div>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="#about">About</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Links</a>
+            </nav>
         </header>
         <main>
-            <section id="about">
-                <div class="about-content">
-                    <img src="Images/Profile.jpg" alt="Profile Picture" class="profile">
+            <section id="about" class="about-section">
+                <div class="section-heading">
+                    <h2>About</h2>
                 </div>
-                <div class="about-text">
-                    <p>Hi, I’m an IT/Cybersecurity pro and I've been in the game since 2019. I’ve worked with Active Directory and Linux systems, managed Microsoft 365 and Azure environments, and leveraged Intune for device management and security. I’ve run vulnerability scans, built up skills in ethical hacking, and implemented cybersecurity best practices. I’m also a big fan of PowerShell scripting—it’s my go-to for automating tasks, boosting efficiency, and tightening security.</p>                      
-                    <p>I created this site as a fun project to dive into web design while also sharing my accomplishments and adventures. It’s a blend of creativity, learning, and a personal touch to showcase who I am and what I’ve done.</p>
+                <div class="about-layout">
+                    <div class="about-media">
+                        <img src="Images/Profile.png" alt="Profile picture of Bradley Currie" class="profile">
+                    </div>
+                    <div class="about-text">
+                        <p class="section-lead">Hi, I'm Bradley. I’ve been a technology professional since 2019.</p>
+                        <p>Below are some areas where I have hands-on experience:</p>
+                        <ul class="skill-list">
+                            <li>Active Directory</li>
+                            <li>Azure</li>
+                            <li>Microsoft 365</li>
+                            <li>Enterprise networking</li>
+                            <li>Linux</li>
+                            <li>Python</li>
+                            <li>PowerShell</li>
+                            <li>Penetration Testing</li>
+                            <li>Virtualization</li>
+                        </ul>
+                        <p>I created this site as a fun project to dive into web design while also sharing my accomplishments and adventures.</p>
+                    </div>
                 </div>
-                <hr class="section-divider">
+                <div class="section-divider" aria-hidden="true"></div>
             </section>
             <section id="certifications">
-                <h2>Certifications</h2>
-                <div class="certifications">
-                    <a href="https://aspen.eccouncil.org/VerifyBadge?type=certification&a=ktXaSJUpWzLxnBGTM+JIqwkUtEanx1sjxO+D8WNoVjw=" target="_blank" rel="noopener noreferrer" >
-                        <img src="Images/CEH.png" alt="CEH" class="cert-logo">
+                <div class="section-heading">
+                    <h2>Certifications</h2>
+                    <p class="section-subtitle">A snapshot of the credentials I've earned along the way.</p>
+                </div>
+                <div class="cert-grid">
+                    <a href="https://aspen.eccouncil.org/VerifyBadge?type=certification&a=ktXaSJUpWzLxnBGTM+JIqwkUtEanx1sjxO+D8WNoVjw=" target="_blank" rel="noopener noreferrer" class="cert-card">
+                        <img src="Images/CEH.png" alt="Certified Ethical Hacker" class="cert-logo">
+                        <span>CEH</span>
                     </a>   
-                    <a href="https://www.credly.com/badges/3d360759-11ea-471d-8572-a6dee36b8f68?source=linked_in_profile" target="_blank" rel="noopener noreferrer" >
-                        <img src="Images/Security.png" alt="Security+" class="cert-logo">
+                    <a href="https://www.credly.com/badges/3d360759-11ea-471d-8572-a6dee36b8f68?source=linked_in_profile" target="_blank" rel="noopener noreferrer" class="cert-card">
+                        <img src="Images/Security.png" alt="CompTIA Security+" class="cert-logo">
+                        <span>Security+</span>
                     </a>
-                    <a href="https://www.credential.net/8f3e7524-2188-4b88-aa6c-0d0ca9af4675" target="_blank" rel="noopener noreferrer" >
-                        <img src="Images/OSCP.png" alt="OSCP" class="cert-logo">
+                    <a href="https://www.credential.net/8f3e7524-2188-4b88-aa6c-0d0ca9af4675" target="_blank" rel="noopener noreferrer" class="cert-card">
+                        <img src="Images/OSCP.png" alt="Offensive Security Certified Professional" class="cert-logo">
+                        <span>OSCP</span>
                     </a>
-                    <a href="https://www.credly.com/badges/154c3478-403d-421a-95ff-cdb7020d4154/linked_in_profile" target="_blank" rel="noopener noreferrer" >
+                    <a href="https://www.credly.com/badges/154c3478-403d-421a-95ff-cdb7020d4154/linked_in_profile" target="_blank" rel="noopener noreferrer" class="cert-card">
                         <img src="Images/BTL1.png" alt="BTL1" class="cert-logo">
+                        <span>BTL1</span>
                     </a>
-                    <a href="https://learn.microsoft.com/en-us/users/bradcurrie-6444/credentials/c4f6da0ad2f114b6" target="_blank" rel="noopener noreferrer" >
-                        <img src="Images/MS-Associate.png" alt="MS-Associate" class="cert-logo">
+                    <a href="https://learn.microsoft.com/en-us/users/bradcurrie-6444/credentials/c4f6da0ad2f114b6" target="_blank" rel="noopener noreferrer" class="cert-card">
+                        <img src="Images/MS-Associate.png" alt="Microsoft Certified Associate" class="cert-logo">
+                        <span>MS Associate</span>
                     </a>
                 </div>
-                <hr class="section-divider">
+                <div class="section-divider" aria-hidden="true"></div>
             </section>
             <section id="education">
-                <h2>Education</h2>
-                <div class="education">
-                    <div class="education-item">
+                <div class="section-heading">
+                    <h2>Education</h2>
+                </div>
+                <div class="education-grid">
+                    <article class="education-card">
                         <img src="Images/WGU.png" alt="WGU Logo" class="education-logo">
                         <div class="education-text">
-                            <p>Master's Degree</p>
-                            <p>Cybersecurity and Information Assurance</p>
+                            <p class="education-degree">Master's Degree</p>
+                            <p class="education-focus">Cybersecurity and Information Assurance</p>
                         </div>
-                    </div>
-                    <div class="education-item">
+                    </article>
+                    <article class="education-card">
                         <img src="Images/HSU.webp" alt="HSU Logo" class="education-logo">
                         <div class="education-text">
-                            <p>Bachelor's Degree</p>
-                            <p>Behavioral Sciences</p>
+                            <p class="education-degree">Bachelor's Degree</p>
+                            <p class="education-focus">Behavioral Sciences</p>
                         </div>
-                    </div>
-                    <div class="education-item">
+                    </article>
+                    <article class="education-card">
                         <img src="Images/TSTC.png" alt="TSTC Logo" class="education-logo">
                         <div class="education-text">
-                            <p>Associate's Degree</p>
-                            <p>Computer Networking & Systems Administration</p>
+                            <p class="education-degree">Associate's Degree</p>
+                            <p class="education-focus">Computer Networking &amp; Systems Administration</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
-                <hr class="section-divider">
+                <div class="section-divider" aria-hidden="true"></div>
             </section>
             <section class="contact" id="contact">
-                <h2>Links</h2>
-                <div class="contact-logos">
+                <div class="section-heading">
+                    <h2>Links</h2>
+                    <p class="section-subtitle">Let's connect—here are the places I spend my time online.</p>
+                </div>
+                <div class="contact-actions">
                     <a href="mailto:bradley.currie@protonmail.com" class="button">
-                        <img src="Images/email.png" alt="Email" class="email-logo">
+                        <img src="Images/email.png" alt="Email" class="contact-icon">
                         Email me
                     </a>
-                    <a href="https://www.linkedin.com/in/bradley-currie-03b362115/" target="_blank" rel="noopener noreferrer"  class="button">
-                        <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
+                    <a href="https://www.linkedin.com/in/bradley-currie-03b362115/" target="_blank" rel="noopener noreferrer" class="button">
+                        <img src="Images/linkedin.png" alt="LinkedIn" class="contact-icon">
+                        LinkedIn
                     </a>
-                    <a href="https://github.com/spicyrice2077" target="_blank" rel="noopener noreferrer"  class="button">
-                        <img src="Images/Github.png" alt="Github" class="linkedin-logo">
+                    <a href="https://github.com/spicyrice2077" target="_blank" rel="noopener noreferrer" class="button">
+                        <img src="Images/Github.png" alt="GitHub" class="contact-icon">
+                        GitHub
                     </a>
                 </div>
             </section>
         </main>
         <footer>
-            <p>&copy; 2024 bradleycurrie.com</p>
+            <p>&copy; bradleycurrie.com</p>
         </footer>
     </div>
 </body>
